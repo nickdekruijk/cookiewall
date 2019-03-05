@@ -5,6 +5,11 @@ According to EU laws visitors should opt-in for all tracking cookies/pixels/code
 To install package use
 `composer require nickdekruijk/cookiewall`
 
+Publish the config file in case you want to customize it
+```bash
+php artisan vendor:publish --provider=NickDeKruijk\\Cookiewall\\CookiewallServiceProvider
+```
+
 For Laravel version lower then 5.5 add the Service Provider to the `'providers'` array in `config/app.php`
 ```php
 NickDeKruijk\Cookiewall\CookiewallServiceProvider::class,
