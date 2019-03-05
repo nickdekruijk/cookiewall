@@ -12,7 +12,7 @@ class CookiewallServiceProvider extends \Illuminate\Support\ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__.'/config.php' => config_path('settings.php'),
+            __DIR__.'/config.php' => config_path('cookiewall.php'),
         ], 'config');
         $this->loadTranslationsFrom(__DIR__.'/translations', 'cookiewall');
         $this->loadViewsFrom(__DIR__.'/views', 'cookiewall');
